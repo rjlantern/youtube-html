@@ -162,11 +162,21 @@ body {
   border-bottom-right-radius: 2px;
   border: 1px solid rgb(196, 196, 196);
   margin-right: 10px;
+  
   /* z-index: -1; */
   position: relative;
 }
 
-.search-btn .tooltip {
+.tooltip{
+  display: none;
+}
+
+.search-btn:hover{
+  cursor: pointer;
+}
+
+.search-btn:hover .tooltip {
+  display: block;
   position: absolute;
   background-color: rgb(149, 149, 149);
   color: #fff;
@@ -193,10 +203,30 @@ body {
   border-radius: 20px;
   border: none;
   background-color: rgb(244, 244, 244);
+  position: relative;
+}
+
+.tooltip2 {
+  display: none;
 }
 
 .voice-btn:hover {
-  background-color: rgb(215, 215, 215);
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+.voice-btn:hover .tooltip2 {
+  display: block;
+  position: absolute;
+  background-color: rgb(149, 149, 149);
+  color: #fff;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  bottom: -35px;
+  left: -5px;
 }
 
 .search-box {
